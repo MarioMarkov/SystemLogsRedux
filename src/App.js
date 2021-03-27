@@ -4,6 +4,11 @@ import 'materialize-css/dist/css/materialize.min.css'
 import M from 'materialize-css/dist/js/materialize.min.js'
 import "./App.css"
 import {Logs} from './components/logs/Logs'
+import {AddBtn} from './components/layout/AddBtn'
+import {AddLogModal} from './components/logs/AddLogModal'
+import {EditLogModal} from './components/logs/EditLogModal'
+
+
 
 const  App = () => {
 
@@ -16,6 +21,10 @@ const  App = () => {
     <>
      <Searchbar/>
      <div className="container">
+       <AddBtn/>
+       <AddLogModal/>
+       <EditLogModal/>
+
        <Logs/>
      </div>
     </>
